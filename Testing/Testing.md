@@ -27,7 +27,7 @@ sure that the expected behavior on the web is correct.
 
 ## Testing Libraries
 
-![testing-libraries](/Testing/testing-libraries.PNG)
+![testing-libraries](./testing-libraries.png)
 
 * The scaffolding giving us the ability to use some function calls and some new methods for us to actually write our tests.
   * Think of this as scaffolding or building this structure around our tests.
@@ -83,7 +83,7 @@ sure that the expected behavior on the web is correct.
 * **Code Coverage** is provided by libraries like **Istanbul**.
   * **Jest** has code coverage already included but actually has **Istanbul** running underneath the hood.
   * Commands for testing coverage `npm test --coverage`
-   **![test coverage](./test-coverage.PNG)**
+   ![test coverage](./test-coverage.png)
 
 ## Popularity
 
