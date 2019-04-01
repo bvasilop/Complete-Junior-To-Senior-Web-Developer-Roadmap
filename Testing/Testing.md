@@ -165,10 +165,14 @@ to implement.
 ## Tests in development
 
 * Keep in mind that tests are meant for development. You're never going to ship your test libraries or your test code into production.
-* Most of the time, you're saving these libraries with the `--save dev` in **NPM** because they're
+* Most of the time, you're saving these libraries with the `--save-dev` or `npm install --save-dev jest` in **NPM** because they're
 only used for development.
 * In **development** as you're writing your tests and as you're writing your code, you have something like **Jest** running in the background that has the **scaffolding**, the **assertion library**, the **Test Runner**, the **Spies**, **Mocks** and  **Stubs** that we need to read the tests, run the tests, see which tests pass or fail and also add **Code Coverage** so that we can work on our project and when it's ready, it passes all the tests, it has all the tests we need. We can then send it to production without all this stuff that production doesn't need.
 * Remember that when we're running these tests,
 we can run them in the **DOM**, we can run them in a **headless browser**, or we can just run them on the **desktop**.
 
 * We're going to use **Jest** because it's the fastest and the simplest way to run our tests with **createReact**.
+
+## Creating an **NPM** package with `npm-y`
+
+![npm package](./create-npm-package.png)
