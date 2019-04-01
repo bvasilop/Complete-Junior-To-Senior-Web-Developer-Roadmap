@@ -11,11 +11,11 @@
 ## Unit Tests
 
 * Should cover all small, **pure functions** of an application.
-  * small, **pure functions** take an input and return an output. They do one thing at a time really really well.
+  * Small, **pure functions** take an input and return an output. They do one thing at a time really really well.
   * It's the main principle in **functional programming**.
-* Tests individual functions or classes.
+* They test individual functions or classes.
 * They are the cheapest to implement, the easiest to implement and 90 percent of your time you're going to be working on writing unit tests.
-* the awesome side effect of this is that it allows us to write unit tests really really easily because our functions are so simple.
+* The awesome side effect of this is that it allows us to write unit tests really easily because our functions are so simple.
   * Just give it an input and get an output and just test that based on an input.
   * This is one of the biggest benefits of **functional programming** versus **object oriented programming**.
 * A **pure function** is a function that has no side effects, like affecting another part of a program and always return something based on an input.
@@ -28,19 +28,19 @@
     * It could be a contract between a function and another function.
     * Maybe my sign in function calls a load profile function. **Unit tests** would test the sign and function and a load function but not the contract between them.
 * **Unit tests** write code that is separated away nicely.
-  * Clean, functional components are functions which make it easier to use unit tests because everything is in small chunks.
+  * Clean, functional components are functions which make it easier to use unit tests because everything comes in small chunks.
   * This is going to lead to nice maintainable code in the long run.
-* With **Unit tests**, you would probably use something like spies from a mocking library to ensure expected side effects instead of just asserting an output.
+* With **Unit tests**, you would probably use something like **Spies** from a mocking library to ensure expected side effects instead of just asserting an output.
 * You might also use **Stubs** to mock and modify parts of a process that are not inside of the specific test such as mocking a database call.
 
 ## Integration Tests
 
 * **Integration tests** are all about cross communication between different units of code.
 * Testing how different pieces of code work together.
-* It can be testing of whether the database works with, for example, the Express App that's requesting some data from the database, or it could be testing how a function works with another function and how this connection between them, functions.
-* A fake user just for the test as opposed to unit testing a browser or a browser like environment, could help with the processes that are dependent on the window object.
-  * This is especially true when we're working with react and rendering components.
-* Think of integration tests as connecting components to see how they work together instead of individual small units that unit tests test.
+* It can be testing whether the database works with, for example, the Express App that's requesting some data from the database, or it could be testing how a function works with another function and how this connection between them, functions.
+* A fake user, just for the test as opposed to unit testing a browser or a browser like environment, could help with the processes that are dependent on the window object.
+  * This is especially true when we're working with **React** and rendering components.
+* Think of **Integration Tests** as connecting components to see how they work together instead of individual small units that unit tests test.
 * The downside to them is that they're expensive.
   * They're slower.
   * There's more dev time involved in thinking them out and writing them compared to unit tests which are much faster.
@@ -70,7 +70,7 @@ to implement.
 * If you just want to get started and not worry about cross browser and have all the tools in one probably **Test Cafe´** is the best choice.
 * If you want the one that has the best documentation online, **Web Driver IO** is really great.
 * If you want really simple ways to automate user actions or do something like web scraping,      **Nightmare.js** is pretty good.
-*  Many companies instead of writing these scripts simply hire people to do automation testing and at some companies you have people like testers that do this for you and make sure that the app works as intended.
+* Many companies instead of writing these scripts simply hire people to do automation testing and at some companies you have people like testers that do this for you and make sure that the app works as intended.
 * The main thing is that we want to create two different testing processes.
   1. One for running unit tests and integration tests
   2. A completely separate one to run these UI tests. The automation tests.
@@ -165,9 +165,9 @@ to implement.
 ## Tests in development
 
 * Keep in mind that tests are meant for development. You're never going to ship your test libraries or your test code into production.
-* Most of the time you're saving these libraries with the `--save dev` in **NPM** because they're
+* Most of the time, you're saving these libraries with the `--save dev` in **NPM** because they're
 only used for development.
-* In **development** as you're writing your tests and are as you're writing your code, you have something like **Jest** running in the background that has the **scaffolding**, the **assertion library**, the **test runner**, the **spies**, **mocks** and  **stubs** that we need to read the tests, run the tests, see which tests pass or fail and also add code coverage so that we can work on our project and when it's ready, it passes all the tests, it has all the tests we need. We can then send it to production without all this stuff that production doesn't need.
+* In **development** as you're writing your tests and as you're writing your code, you have something like **Jest** running in the background that has the **scaffolding**, the **assertion library**, the **Test Runner**, the **Spies**, **Mocks** and  **Stubs** that we need to read the tests, run the tests, see which tests pass or fail and also add **Code Coverage** so that we can work on our project and when it's ready, it passes all the tests, it has all the tests we need. We can then send it to production without all this stuff that production doesn't need.
 * Remember that when we're running these tests,
 we can run them in the **DOM**, we can run them in a **headless browser**, or we can just run them on the **desktop**.
 
