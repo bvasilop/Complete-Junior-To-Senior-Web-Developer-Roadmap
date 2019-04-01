@@ -27,7 +27,7 @@ sure that the expected behavior on the web is correct.
 
 ## Testing Libraries
 
-![testing-libraries](./testing-libraries.PNG)
+![testing-libraries](/Testing/testing-libraries.PNG)
 
 * The scaffolding giving us the ability to use some function calls and some new methods for us to actually write our tests.
   * Think of this as scaffolding or building this structure around our tests.
